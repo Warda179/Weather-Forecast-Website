@@ -24,11 +24,16 @@ A modern full-stack web application that provides **real-time weather informatio
 ---
 
 ## API Key
-The application requires an OpenWeatherMap API key. You can add it in your environment variables:
+The application requires an OpenWeatherMap API key.  
+
+1. Edit `.env` file in the project root.
+2. Add your API key like this:
 
 ```bash
 const API_KEY = "YOUR_API_KEY_HERE";
 ```
+
+3. Restart the development server.
 
 ---
 <img width="1915" height="932" alt="image" src="https://github.com/user-attachments/assets/d134e0b8-95ad-4d3d-bce3-b1c14b492a60" />
