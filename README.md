@@ -32,7 +32,3 @@ const API_KEY = "YOUR_API_KEY_HERE";
 
 ---
 <img width="1915" height="932" alt="image" src="https://github.com/user-attachments/assets/d134e0b8-95ad-4d3d-bce3-b1c14b492a60" />
-
-
-# .env
-REACT_APP_OWM_API_KEY=YOUR_API_KEY_HERE
