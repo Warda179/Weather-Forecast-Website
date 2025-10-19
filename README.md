@@ -23,17 +23,51 @@ A modern full-stack web application that provides **real-time weather informatio
 
 ---
 
-## API Key
-The application requires an OpenWeatherMap API key.  
+**Step by step Guide on how someone can use your Weather Forecast Application**:
 
-1. Edit `.env` file in the project root.
-2. Add your API key like this:
+---
+
+### 1. **Clone the Repository**
 
 ```bash
-const API_KEY = "YOUR_API_KEY_HERE";
+git clone https://github.com/YourUsername/Weather-Forecast-App.git
+cd Weather-Forecast-App
 ```
 
-3. Restart the development server.
+---
+
+### 2. **Install Dependencies**
+
+Make sure you have Node.js installed. Then run:
+
+```bash
+npm install
+```
+
+---
+
+### 3. **Set Up OpenWeatherMap API Key**
+
+1. Sign up at [OpenWeatherMap](https://openweathermap.org/) and get your API key.
+2. In the project root, create a `.env` file.
+3. Add the key like this:
+
+```
+REACT_APP_OWM_API_KEY=YOUR_API_KEY_HERE
+```
+
+ Make sure to replace `YOUR_API_KEY_HERE` with your actual key.
+
+---
+
+### 4. **Run the Application**
+
+```bash
+npm start
+```
+
+This will start the development server and open the app at `http://localhost:3000`.
+
 
 ---
 <img width="1915" height="932" alt="image" src="https://github.com/user-attachments/assets/d134e0b8-95ad-4d3d-bce3-b1c14b492a60" />
