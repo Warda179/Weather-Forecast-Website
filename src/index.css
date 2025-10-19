@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* src/index.css */
+
+/* Google Font (Inter) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global base tokens to improve spacing & contrast */
+:root{
+  --container-max: 1100px;
+  --ui-radius: 12px;
+  --muted: #6b7280;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Base reset & small helpers */
+html,body,#root { height: 100%; }
+body {
+  @apply bg-subtle-50 text-slate-900 antialiased;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+/* Container utility */
+.container-custom {
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Card utility for consistent look */
+.card {
+  @apply bg-white rounded-xl-2 shadow-soft-lg overflow-hidden;
+  border-radius: var(--ui-radius);
+}
+
+/* Buttons */
+.btn {
+  @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-md font-semibold shadow-sm transition ease-in-out duration-200;
+}
+.btn-primary { @apply bg-brand-500 text-white hover:bg-brand-600; }
+.btn-ghost { @apply bg-white border border-slate-100 text-slate-700 hover:shadow-md; }
+
+/* Form */
+.input {
+  @apply w-full px-3 py-2 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-300;
+}
+
+/* Nicer scrollbar for desktop */
+@media (min-width: 768px) {
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-thumb { background: rgba(2,6,23,0.06); border-radius: 999px; }
 }

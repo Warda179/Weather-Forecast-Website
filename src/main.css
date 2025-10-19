@@ -1,0 +1,8 @@
+/* src/main.css */
+/* Tailwind directives — make sure Tailwind is installed and configured */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small helper styles */
+body { @apply bg-slate-50; }
