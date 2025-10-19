@@ -23,9 +23,8 @@ A modern full-stack web application that provides **real-time weather informatio
 
 ---
 
-**Step by step Guide on how to run Weather Forecast Application**:
+## Step by step Guide on how to run Weather Forecast Application:
 
----
 
 ### 1. **Clone the Repository**
 
