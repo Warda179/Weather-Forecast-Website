@@ -23,7 +23,7 @@ A modern full-stack web application that provides **real-time weather informatio
 
 ---
 
-**Step by step Guide on how someone can use your Weather Forecast Application**:
+**Step by step Guide on how to run Weather Forecast Application**:
 
 ---
 
